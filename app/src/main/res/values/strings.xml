@@ -6,4 +6,8 @@
     <string name="hintpassword">Masukan password Anda disini</string>
     <string name="lupapasswordlogin">lupa password?</string>
     <string name="belummemilikiakunlogin">belum memiliki akun?</string>
+    <string name="app_name">PTBSejahtera</string>
+    <string name="masland">Masuk</string>
+    <string name="atauland">atau</string>
+    <string name="daflan">Daftar</string>
 </resources>

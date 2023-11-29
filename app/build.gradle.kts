@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "example.scrollingtext.ptbsejahtera"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "example.scrollingtext.ptbsejahtera"
