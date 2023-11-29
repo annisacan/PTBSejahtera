@@ -133,7 +133,7 @@
                 android:elevation="14dp"
                 android:fontFamily="@font/pb"
                 android:layerType="hardware"
-                android:text="Masuk"
+                android:text="@string/teksbutonmasuk_login"
                 android:textColor="@color/tekshijau"
                 android:textSize="24sp"/>
 
