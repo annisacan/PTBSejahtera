@@ -3,4 +3,7 @@
     <string name="teksmasuk_login">Masuk</string>
     <string name="teksdenganakunanda_login">dengan akun Anda</string>
     <string name="hintemail">Masukan email Anda disini</string>
+    <string name="hintpassword">Masukan password Anda disini</string>
+    <string name="lupapasswordlogin">lupa password?</string>
+    <string name="belummemilikiakunlogin">belum memiliki akun?</string>
 </resources>
