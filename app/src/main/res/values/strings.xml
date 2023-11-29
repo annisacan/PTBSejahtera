@@ -18,4 +18,8 @@
     <string name="teksinputuser_reg">Masukan username Anda</string>
     <string name="hintinputinstitusi_reg">Masukan nama institusi Anda</string>
     <string name="hintinputnomor_reg">Masukan nomor Anda disini</string>
+    <string name="forpass">Forgot Password</string>
+    <string name="enteremail">Masukkan Emailmu:</string>
+    <string name="forcan">Cancel</string>
+    <string name="foreset">Reset</string>
 </resources>
