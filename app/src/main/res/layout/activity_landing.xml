@@ -45,7 +45,7 @@
                 android:id="@+id/butmaslan"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/pb"
                 android:text="@string/masland"
