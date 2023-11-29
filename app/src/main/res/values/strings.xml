@@ -10,8 +10,12 @@
     <string name="atauland">atau</string>
     <string name="daflan">Daftar</string>
     <string name="teksbutonmasuk_login">Masuk</string>
-    <string name="forpass">Forgot Password</string>
-    <string name="enteremail">Masukkan Emailmu:</string>
-    <string name="forcan">Cancel</string>
-    <string name="foreset">Reset</string>
+    <string name="teksdaftar_reg">Daftar</string>
+    <string name="teksmulaijalan_reg">mulai perjalananmu!</string>
+    <string name="buttonsudahakun_reg">sudah memiliki akun?</string>
+    <string name="teksdaftarbut_reg">Daftar</string>
+    <string name="hintconfirpass_reg">Konfirmasi password kembali</string>
+    <string name="teksinputuser_reg">Masukan username Anda</string>
+    <string name="hintinputinstitusi_reg">Masukan nama institusi Anda</string>
+    <string name="hintinputnomor_reg">Masukan nomor Anda disini</string>
 </resources>
