@@ -10,4 +10,8 @@
     <string name="atauland">atau</string>
     <string name="daflan">Daftar</string>
     <string name="teksbutonmasuk_login">Masuk</string>
+    <string name="forpass">Forgot Password</string>
+    <string name="enteremail">Masukkan Emailmu:</string>
+    <string name="forcan">Cancel</string>
+    <string name="foreset">Reset</string>
 </resources>
