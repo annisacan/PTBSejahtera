@@ -34,6 +34,7 @@ public class Register_Activity extends AppCompatActivity {
         signkonpass= findViewById(R.id.inputconfirpassreg);
         signinst= findViewById(R.id.inputinstitusi);
         signnohp= findViewById(R.id.inputnomorhp);
+        dafbtn = findViewById(R.id.DaftarTombol);
 
         dafbtn.setOnClickListener(new View.OnClickListener() {
             @Override
