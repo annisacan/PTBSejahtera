@@ -1,0 +1,206 @@
+[
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_logoedumingle.png.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\logoedumingle.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_iconpassoutline.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\iconpassoutline.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\font_pm.ttf.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\font\\pm.ttf"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_iconemail.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\iconemail.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_account_circle.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\account_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_fragment_my.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\fragment_my.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_white_box.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\white_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\font_pb.ttf.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\font\\pb.ttf"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_green_round.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\green_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_profile_menu_layout.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\profile_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_ombaklandingpage.png.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\ombaklandingpage.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_fieldinput.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\fieldinput.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\font_pr.ttf.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\font\\pr.ttf"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\font_peb.ttf.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\font\\peb.ttf"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_activity_forgot.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\activity_forgot.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_iconusername.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\iconusername.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_baseline_lock_reset_24.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\baseline_lock_reset_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_edumingleputih.png.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\edumingleputih.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_iconinstitusi.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\iconinstitusi.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_logoedulogin.png.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\logoedulogin.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_ombaklogin.png.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\ombaklogin.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_activity_landing.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\activity_landing.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_iconpassword.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\iconpassword.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "example.scrollingtext.ptbsejahtera.app-merged_res-38:/layout_activity_home.xml.flat",
+        "source": "example.scrollingtext.ptbsejahtera.app-main-40:/layout/activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_activity_toolbar.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\activity_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_ombakregis.png.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\ombakregis.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_toolbar_bg.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\toolbar_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\menu_toolbar_menu.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\menu\\toolbar_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_paternbook.png.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\paternbook.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_edulogokecik.png.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\edulogokecik.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\drawable_iconhp.xml.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\drawable\\iconhp.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-merged_res-38:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO ID\\.gradle\\daemon\\8.0\\example.scrollingtext.ptbsejahtera.app-main-40:\\mipmap-mdpi\\ic_launcher_round.webp"
+    }
+]
