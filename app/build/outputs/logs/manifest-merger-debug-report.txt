@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:2:1-42:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\LENOVO ID\.gradle\caches\transforms-3\d49ec510c338e4b25b77263b6d755eb1\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\LENOVO ID\.gradle\caches\transforms-3\afb5814eccbd68069e5bd6389ce2ce7a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\LENOVO ID\.gradle\caches\transforms-3\1ee4f095f79ea0b725c26862c8d94cfa\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -81,8 +81,8 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\LENOVO ID\.
 	android:name
 		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:8:5-42:19
-INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:8:5-42:19
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:8:5-40:19
+INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:8:5-40:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\LENOVO ID\.gradle\caches\transforms-3\d49ec510c338e4b25b77263b6d755eb1\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\LENOVO ID\.gradle\caches\transforms-3\d49ec510c338e4b25b77263b6d755eb1\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\LENOVO ID\.gradle\caches\transforms-3\afb5814eccbd68069e5bd6389ce2ce7a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -146,45 +146,45 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\LENOVO ID\.gradle\
 	android:dataExtractionRules
 		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:10:9-65
 activity#example.scrollingtext.ptbsejahtera.Home_Activity
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:18:9-27:20
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:18:9-21:20
 	android:exported
 		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:20:13-36
 	android:name
 		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:19:13-42
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:21:13-25:29
-action#android.intent.action.MAIN
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:22:17-69
-	android:name
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:22:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:24:17-77
-	android:name
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:24:27-74
 activity#example.scrollingtext.ptbsejahtera.Register_Activity
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:28:9-32:20
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:22:9-30:20
 	android:exported
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:24:13-36
 	android:name
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:29:13-46
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:23:13-46
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:28:27-74
 activity#example.scrollingtext.ptbsejahtera.Landing
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:33:9-35:39
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:31:9-33:39
 	android:exported
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:35:13-36
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:33:13-36
 	android:name
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:34:13-36
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:32:13-36
 activity#example.scrollingtext.ptbsejahtera.Login_Activity
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:36:9-38:39
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:34:9-36:39
 	android:exported
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:38:13-36
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:36:13-36
 	android:name
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:37:13-43
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:35:13-43
 activity#example.scrollingtext.ptbsejahtera.MainActivity
-ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:39:9-41:49
+ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:37:9-39:48
 	android:exported
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:39:13-36
 	android:name
-		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:40:13-41
+		ADDED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml:38:13-41
 uses-sdk
 INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\PTBSejahtera\app\src\main\AndroidManifest.xml

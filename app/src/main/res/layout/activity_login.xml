@@ -98,21 +98,23 @@
                 android:id="@+id/forgotPasswordButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="300dp"
                 android:layout_marginEnd="25dp"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/pm"
                 android:text="@string/lupapasswordlogin"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/belumPunyaAkunButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
                 android:layout_marginTop="300dp"
-
+                android:textAllCaps="false"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/pm"
                 android:text="@string/belummemilikiakunlogin"
@@ -125,6 +127,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="350dp"
                 android:layout_marginRight="25dp"
+                android:background="@drawable/fieldinput"
                 android:backgroundTint="@color/white"
                 android:elevation="14dp"
                 android:fontFamily="@font/pb"

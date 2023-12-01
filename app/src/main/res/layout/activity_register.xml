@@ -160,26 +160,26 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginTop="570dp"
+                android:layout_marginEnd="30dp"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/pm"
                 android:text="@string/buttonsudahakun_reg"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/DaftarTombol"
+                android:textAllCaps="false"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="610dp"
                 android:layout_marginRight="25dp"
-                style="@style/Widget.Material3.Button.IconButton.Outlined"
                 android:fontFamily="@font/pb"
-                app:strokeColor="#FEFEFE"
-                app:strokeWidth="4dp"
                 android:text="@string/teksdaftarbut_reg"
                 android:textColor="@color/white"
                 android:textSize="24sp"
-                />
+                android:background="@drawable/fieldoutline"/>
 
         </androidx.cardview.widget.CardView>
 
