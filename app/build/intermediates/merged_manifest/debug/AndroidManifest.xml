@@ -32,15 +32,16 @@
         android:theme="@style/Theme.PTBSejahtera" >
         <activity
             android:name="example.scrollingtext.ptbsejahtera.Home_Activity"
-            android:exported="false" />
-        <activity
-            android:name="example.scrollingtext.ptbsejahtera.Register_Activity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="example.scrollingtext.ptbsejahtera.Register_Activity"
+            android:exported="true" >
         </activity>
         <activity
             android:name="example.scrollingtext.ptbsejahtera.Landing"
@@ -50,8 +51,7 @@
             android:exported="true" />
         <activity
             android:name="example.scrollingtext.ptbsejahtera.MainActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"

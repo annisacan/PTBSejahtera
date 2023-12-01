@@ -27,7 +27,7 @@
 18-->[androidx.core:core:1.9.0] C:\Users\LENOVO ID\.gradle\caches\transforms-3\45dba061abe1e5d647d9f295032bd2d4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:8:5-40:19
+20-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:8:5-42:19
 21        android:allowBackup="true"
 21-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -50,47 +50,47 @@
 32        android:theme="@style/Theme.PTBSejahtera" >
 32-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:16:9-50
 33        <activity
-33-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:18:9-20:40
+33-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:18:9-27:20
 34            android:name="example.scrollingtext.ptbsejahtera.Home_Activity"
 34-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:19:13-42
-35            android:exported="false" />
-35-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:20:13-37
-36        <activity
-36-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:21:9-29:20
-37            android:name="example.scrollingtext.ptbsejahtera.Register_Activity"
-37-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:22:13-46
-38            android:exported="true" >
-38-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:23:13-36
-39            <intent-filter>
-39-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:24:13-28:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:25:17-69
-40-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:25:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:27:17-77
-42-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:27:27-74
-43            </intent-filter>
-44        </activity>
-45        <activity
-45-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:30:9-32:38
-46            android:name="example.scrollingtext.ptbsejahtera.Landing"
-46-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:31:13-36
-47            android:exported="true" />
-47-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:32:13-36
-48        <activity
-48-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:33:9-35:38
-49            android:name="example.scrollingtext.ptbsejahtera.Login_Activity"
-49-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:34:13-43
-50            android:exported="true" />
-50-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:35:13-36
-51        <activity
-51-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:36:9-39:20
-52            android:name="example.scrollingtext.ptbsejahtera.MainActivity"
-52-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:37:13-41
-53            android:exported="false" >
-53-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:38:13-37
-54        </activity>
+35            android:exported="true" >
+35-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:20:13-36
+36            <intent-filter>
+36-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:21:13-25:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:22:17-69
+37-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:22:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:24:17-77
+39-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:24:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:28:9-32:20
+43            android:name="example.scrollingtext.ptbsejahtera.Register_Activity"
+43-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:29:13-46
+44            android:exported="true" >
+44-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:30:13-36
+45        </activity>
+46        <activity
+46-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:33:9-35:39
+47            android:name="example.scrollingtext.ptbsejahtera.Landing"
+47-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:34:13-36
+48            android:exported="true" />
+48-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:35:13-36
+49        <activity
+49-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:36:9-38:39
+50            android:name="example.scrollingtext.ptbsejahtera.Login_Activity"
+50-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:37:13-43
+51            android:exported="true" />
+51-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:38:13-36
+52        <activity
+52-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:39:9-41:49
+53            android:name="example.scrollingtext.ptbsejahtera.MainActivity"
+53-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:40:13-41
+54            android:exported="false" />
+54-->D:\PTBSejahtera\app\src\main\AndroidManifest.xml:41:13-37
 55        <activity
 55-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\LENOVO ID\.gradle\caches\transforms-3\db611e77877d033284c84b1c621bd75e\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:29:9-46:20
 56            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
