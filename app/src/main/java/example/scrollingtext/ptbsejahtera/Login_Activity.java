@@ -21,7 +21,7 @@ public class Login_Activity extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private EditText loginemail, loginpass;
-    private Button loginbtn;
+    private Button loginbtn, forgotbtn, regisbtn;
 
 
     @Override
@@ -33,6 +33,8 @@ public class Login_Activity extends AppCompatActivity {
         loginemail= findViewById(R.id.inputusernamelogin);
         loginpass= findViewById(R.id.inputpasslogin);
         loginbtn= findViewById(R.id.masukTombol);
+        forgotbtn= findViewById(R.id.forgotPasswordButton);
+        regisbtn= findViewById(R.id.belumPunyaAkunButton);
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +65,13 @@ public class Login_Activity extends AppCompatActivity {
                 }else {
                     loginemail.setError("Tolong masukkan email yang terdaftar");
                 }
+            }
+        });
+        regisbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login_Activity.this, Register_Activity.class);
+                startActivity(intent);
             }
         });
     }

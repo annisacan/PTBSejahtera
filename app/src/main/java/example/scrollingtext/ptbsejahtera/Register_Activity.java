@@ -20,7 +20,7 @@ public class Register_Activity extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private EditText signusername, signemail, signpass, signkonpass, signinst, signnohp;
-    private Button dafbtn;
+    private Button dafbtn, linbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class Register_Activity extends AppCompatActivity {
         signinst= findViewById(R.id.inputinstitusi);
         signnohp= findViewById(R.id.inputnomorhp);
         dafbtn = findViewById(R.id.DaftarTombol);
+        linbtn  = findViewById(R.id.belumPunyaAkunButton);
 
         dafbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +70,13 @@ public class Register_Activity extends AppCompatActivity {
                         });
                     }
                 }
+            }
+        });
+        linbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Register_Activity.this, Login_Activity.class);
+                startActivity(intent);
             }
         });
     }
