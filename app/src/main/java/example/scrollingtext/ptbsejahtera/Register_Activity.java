@@ -20,7 +20,7 @@ public class Register_Activity extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private EditText signusername, signemail, signpass, signkonpass, signinst, signnohp;
-    private Button dafbtn;
+    private Button dafbtn, linbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class Register_Activity extends AppCompatActivity {
         signinst= findViewById(R.id.inputinstitusi);
         signnohp= findViewById(R.id.inputnomorhp);
         dafbtn = findViewById(R.id.DaftarTombol);
+        linbtn  = findViewById(R.id.belumPunyaAkunButton);
 
         dafbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,18 +50,33 @@ public class Register_Activity extends AppCompatActivity {
                 }else {
                     String email = signemail.getText().toString().trim();
                     String pass = signpass.getText().toString().trim();
-                    auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()){
-                                Toast.makeText(Register_Activity.this, "Akun Berhasil Terdaftar", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(Register_Activity.this, Login_Activity.class));
-                            }else {
-                                Toast.makeText(Register_Activity.this, "Akun Gagal Terdaftar", Toast.LENGTH_SHORT).show();
+                    String konpass = signkonpass.getText().toString().trim();
+                    
+                    if (pass.length() < 6){
+                        Toast.makeText(Register_Activity.this, "Minimal Password 6 Character", Toast.LENGTH_SHORT).show();
+                    } else if (!pass.equals(konpass)) {
+                        Toast.makeText(Register_Activity.this, "Konfirmasi Password tidak sesuai", Toast.LENGTH_SHORT).show();
+                    } else {
+                        auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()){
+                                    Toast.makeText(Register_Activity.this, "Akun Berhasil Terdaftar", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(Register_Activity.this, Login_Activity.class));
+                                }else {
+                                    Toast.makeText(Register_Activity.this, "Akun Gagal Terdaftar", Toast.LENGTH_SHORT).show();
+                                }
                             }
-                        }
-                    });
+                        });
+                    }
                 }
+            }
+        });
+        linbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Register_Activity.this, Login_Activity.class);
+                startActivity(intent);
             }
         });
     }
