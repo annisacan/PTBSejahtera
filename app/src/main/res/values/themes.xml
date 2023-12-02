@@ -1,11 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.PTBSejahtera" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.PTBSejahtera" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/ijobanget</item>
+        <item name="colorPrimaryVariant">@color/ijobanget</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
         <item name="android:statusBarColor">@color/ijobanget</item>
     </style>
 
-    <style name="Theme.PTBSejahtera" parent="Base.Theme.PTBSejahtera" />
+    <style name="Theme." parent="Base.Theme.PTBSejahtera" />
 </resources>
