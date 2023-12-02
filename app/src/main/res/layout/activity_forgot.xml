@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:id="@+id/forgot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogbox"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/white_box">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fortitle"
+            android:text="@string/forpass"
+            android:fontFamily="@font/pr"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:background="@drawable/green_round"
+            android:textColor="@color/white"
+            android:drawablePadding="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:drawableLeftCompat="@drawable/baseline_lock_reset_24" />
+
+        <TextView
+            android:id="@+id/descfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pr"
+            android:text="@string/enteremail"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/emailbox"
+            app:layout_constraintTop_toBottomOf="@+id/fortitle"/>
+
+        <EditText
+            android:id="@+id/emailbox"
+            android:layout_width="289dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fortitle"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:fontFamily="@font/pb"
+            android:text="@string/forcan"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/dialogbox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailbox" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:fontFamily="@font/pb"
+            android:text="@string/foreset"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/dialogbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailbox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

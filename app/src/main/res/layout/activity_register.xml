@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paternbook"
+    tools:context=".Register_Activity">
+
+    <ImageView
+        android:id="@+id/logodilogin"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:src="@drawable/logoedulogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearreg"/>
+
+    <LinearLayout
+        android:id="@+id/linearreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewlogin"
+            android:layout_width="match_parent"
+            android:layout_height="680dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ombakregis"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/pb"
+                android:text="@string/teksdaftar_reg"
+                android:textColor="@color/white"
+                android:textSize="48sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/pb"
+                android:text="@string/teksmulaijalan_reg"
+                android:textColor="@color/white"
+                android:textSize="32sp"/>
+
+            <EditText
+                android:id="@+id/inputusernamereg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="135dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/fieldinput"
+                android:drawableStart="@drawable/iconusername"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/pm"
+                android:hint="@string/teksinputuser_reg"
+                android:padding="10dp"
+                android:textColorHint="@color/hintijo" />
+
+            <EditText
+                android:id="@+id/inputemailreg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/fieldinput"
+                android:drawableStart="@drawable/iconemail"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/pm"
+                android:hint="@string/hintemail"
+                android:padding="10dp"
+                android:textColorHint="@color/hintijo"/>
+
+            <EditText
+                android:id="@+id/inputpassreg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="285dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/fieldinput"
+                android:drawableStart="@drawable/iconpassword"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/pm"
+                android:hint="@string/hintpassword"
+                android:padding="10dp"
+                android:textColorHint="@color/hintijo"/>
+
+            <EditText
+                android:id="@+id/inputconfirpassreg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="360dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/fieldinput"
+                android:drawableStart="@drawable/iconpassoutline"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/pm"
+                android:hint="@string/hintconfirpass_reg"
+                android:padding="10dp"
+                android:textColorHint="@color/hintijo"/>
+
+            <EditText
+                android:id="@+id/inputinstitusi"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="435dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/fieldinput"
+                android:drawableStart="@drawable/iconinstitusi"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/pm"
+                android:hint="@string/hintinputinstitusi_reg"
+                android:padding="10dp"
+                android:textColorHint="@color/hintijo"/>
+
+            <EditText
+                android:id="@+id/inputnomorhp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="510dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/fieldinput"
+                android:drawableStart="@drawable/iconhp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/pm"
+                android:hint="@string/hintinputnomor_reg"
+                android:padding="10dp"
+                android:textColorHint="@color/hintijo"/>
+
+            <Button
+                android:id="@+id/belumPunyaAkunButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="570dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/pm"
+                android:text="@string/buttonsudahakun_reg"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/DaftarTombol"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="610dp"
+                android:layout_marginRight="25dp"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:fontFamily="@font/pb"
+                app:strokeColor="#FEFEFE"
+                app:strokeWidth="4dp"
+                android:text="@string/teksdaftarbut_reg"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
