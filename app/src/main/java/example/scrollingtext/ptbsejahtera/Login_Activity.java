@@ -60,7 +60,7 @@ public class Login_Activity extends AppCompatActivity {
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(Login_Activity.this, "Login gagal", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login_Activity.this, "Email atau Password anda salah", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }else{

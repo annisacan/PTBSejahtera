@@ -1,8 +1,6 @@
 package example.scrollingtext.ptbsejahtera;
 
-import java.security.PrivateKey;
-
-public class DataClass {
+public class DataClassPress {
     private String dataKegiatan;
     private String dataTanggal;
     private String dataCapaian;
@@ -29,7 +27,7 @@ public class DataClass {
         return dataImage;
     }
 
-    public DataClass(String dataKegiatan, String dataTanggal, String dataCapaian, String dataSkala, String dataImage) {
+    public DataClassPress(String dataKegiatan, String dataTanggal, String dataCapaian, String dataSkala, String dataImage) {
         this.dataKegiatan = dataKegiatan;
         this.dataTanggal = dataTanggal;
         this.dataCapaian = dataCapaian;
