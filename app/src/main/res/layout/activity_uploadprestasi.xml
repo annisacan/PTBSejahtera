@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/paternbook"
-    tools:context=".UploadActivity">
+    tools:context=".UploadActivityPres">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sertifikat Prestasi"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:fontFamily="@font/pb"
             android:textColor="@android:color/holo_green_dark"
             android:layout_gravity="center"/>
@@ -64,7 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Upload Gambar disini"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/pr"
                     android:textAlignment="center"
                     android:textColor="@android:color/holo_green_dark"/>
@@ -81,7 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sertifikat Prestasi"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textAlignment="center"
                     android:fontFamily="@font/pb"
                     android:textColor="@android:color/holo_green_dark"/>
@@ -129,7 +129,7 @@
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Prestasi"
+                    android:hint="Skala"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
@@ -145,7 +145,6 @@
                     android:layout_marginTop="20dp"
                     app:cornerRadius="20dp"
                     android:backgroundTint="@android:color/holo_green_dark"/>
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </ScrollView>
