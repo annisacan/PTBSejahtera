@@ -29,7 +29,7 @@ import com.google.firebase.storage.UploadTask;
 
 public class UploadActivityPeng extends AppCompatActivity {
 
-    ImageView upimage;
+    ImageView upimage, back;
     Button savebtn;
     EditText inkeg, inins, inper, inpos;
     String imageurl;
@@ -46,7 +46,16 @@ public class UploadActivityPeng extends AppCompatActivity {
         inins= findViewById(R.id.instansipeng);
         inper= findViewById(R.id.periodepeng);
         inpos= findViewById(R.id.posisipeng);
+        back= findViewById(R.id.back2);
         savebtn= findViewById(R.id.btnsavepeng);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UploadActivityPeng.this, Tipe_Sertif.class);
+                startActivity(intent);
+            }
+        });
 
         ActivityResultLauncher<Intent>activityResultLauncher= registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
