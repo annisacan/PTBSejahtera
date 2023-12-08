@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/paternbook"
-    tools:context=".UploadActivityPres">
+    tools:context=".UploadActivityPeng">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -26,7 +26,7 @@
             android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sertifikat Prestasi"
+            android:text="Sertifikat Pengalaman"
             android:textSize="30sp"
             android:fontFamily="@font/pb"
             android:textColor="@android:color/holo_green_dark"
@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:src="@drawable/upload"
-                    android:id="@+id/upload1"
+                    android:id="@+id/upload2"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"/>
@@ -80,7 +80,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sertifikat Prestasi"
+                    android:text="Sertifikat Pengalaman"
                     android:textSize="20sp"
                     android:textAlignment="center"
                     android:fontFamily="@font/pb"
@@ -89,7 +89,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/kegiatanpres"
+                    android:id="@+id/kegiatanpeng"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
@@ -101,11 +101,11 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/tglpres"
+                    android:id="@+id/instansipeng"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Tanggal prestasi"
+                    android:hint="Instansi"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
@@ -113,11 +113,11 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/capaianpres"
+                    android:id="@+id/periodepeng"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Capaian yang diperoleh"
+                    android:hint="periode"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
@@ -125,11 +125,11 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/skalapres"
+                    android:id="@+id/posisipeng"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Skala"
+                    android:hint="Posisi"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
@@ -138,7 +138,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:text="Save"
-                    android:id="@+id/btnsavepres"
+                    android:id="@+id/btnsavepeng"
                     android:textSize="18sp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/pb"
@@ -148,4 +148,5 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </ScrollView>
+
 </RelativeLayout>
