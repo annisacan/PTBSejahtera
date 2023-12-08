@@ -112,7 +112,7 @@ public class UploadActivityPeng extends AppCompatActivity {
 
         DataClassPeng dataClass = new DataClassPeng(kegiatan,instansi,periode,posisi,imageurl);
 
-        FirebaseDatabase.getInstance().getReference("Deskripsi Pengalaman").child(kegiatan).setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+        FirebaseDatabase.getInstance().getReference("Deskripsi Sertifikat Pengalaman").child(kegiatan).setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()){

@@ -36,5 +36,13 @@ public class Tipe_Sertif extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnorg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tipe_Sertif.this, UploadActivityOrg.class);
+                startActivity(intent);
+            }
+        });
     }
 }

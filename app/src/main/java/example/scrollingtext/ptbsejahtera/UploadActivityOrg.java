@@ -27,25 +27,25 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-public class UploadActivityPres extends AppCompatActivity {
+public class UploadActivityOrg extends AppCompatActivity {
 
     ImageView upimage;
     Button savebtn;
-    EditText inkegiatan, intgl, incapaian, inskala;
+    EditText inorg, inperiod, injab, indiv;
     String imageurl;
     Uri uri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uploadprestasi);
+        setContentView(R.layout.activity_uploadorganisasi);
 
-        upimage= findViewById(R.id.upload1);
-        inkegiatan= findViewById(R.id.kegiatanpres);
-        intgl= findViewById(R.id.tglpres);
-        incapaian= findViewById(R.id.capaianpres);
-        inskala= findViewById(R.id.skalapres);
-        savebtn= findViewById(R.id.btnsavepres);
+        upimage= findViewById(R.id.upload3);
+        inorg= findViewById(R.id.org);
+        inperiod= findViewById(R.id.periodorg);
+        injab= findViewById(R.id.jabatanorg);
+        indiv= findViewById(R.id.divorg);
+        savebtn= findViewById(R.id.btnsaveorg);
 
         ActivityResultLauncher<Intent>activityResultLauncher= registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -57,7 +57,7 @@ public class UploadActivityPres extends AppCompatActivity {
                             uri = data.getData();
                             upimage.setImageURI(uri);
                         } else {
-                            Toast.makeText(UploadActivityPres.this, "Gambar tidak ada", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(UploadActivityOrg.this, "Gambar tidak ada", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
@@ -79,10 +79,10 @@ public class UploadActivityPres extends AppCompatActivity {
             }
         });
     }
-    public void saveData(){
-        StorageReference storageReference= FirebaseStorage.getInstance().getReference().child("Gambar Prestasi").child(uri.getLastPathSegment());
+    public void saveData() {
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Organisasi").child(uri.getLastPathSegment());
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(UploadActivityPres.this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(UploadActivityOrg.this);
         builder.setCancelable(false);
         builder.setView(R.layout.saving_layout);
         AlertDialog dialog = builder.create();
@@ -91,8 +91,8 @@ public class UploadActivityPres extends AppCompatActivity {
         storageReference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Task<Uri>uriTask = taskSnapshot.getStorage().getDownloadUrl();
-                while (!uriTask.isComplete());
+                Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
+                while (!uriTask.isComplete()) ;
                 Uri urlimage = uriTask.getResult();
                 imageurl = urlimage.toString();
                 uploadData();
@@ -105,26 +105,27 @@ public class UploadActivityPres extends AppCompatActivity {
             }
         });
     }
+
     public void uploadData(){
-        String kegiatan = inkegiatan.getText().toString();
-        String tgl = intgl.getText().toString();
-        String capaian = incapaian.getText().toString();
-        String skala = inskala.getText().toString();
+        String organisasi = inorg.getText().toString();
+        String periode = inperiod.getText().toString();
+        String jabatan = injab.getText().toString();
+        String divisi = indiv.getText().toString();
 
-        DataClassPress dataClass = new DataClassPress(kegiatan,tgl,capaian,skala,imageurl);
+        DataClassPeng dataClass = new DataClassPeng(organisasi,periode,jabatan,divisi,imageurl);
 
-        FirebaseDatabase.getInstance().getReference("Deskripsi Sertifikat Prestasi").child(kegiatan).setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+        FirebaseDatabase.getInstance().getReference("Deskripsi Organisasi").child(organisasi).setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(UploadActivityPres.this, "Saved", Toast.LENGTH_SHORT).show();
+                if (task.isSuccessful()){
+                    Toast.makeText(UploadActivityOrg.this, "saved", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(UploadActivityPres.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UploadActivityOrg.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
