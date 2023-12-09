@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paternbook"
+    tools:context=".UploadActivityPel">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/back3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/backicon"
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sertifikat Organisasi"
+            android:textSize="30sp"
+            android:fontFamily="@font/pb"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:background="@drawable/green_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Gambar disini"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/pr"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/upload"
+                    android:id="@+id/upload4"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sertifikat Pelatihan"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/pb"
+                    android:textColor="@android:color/holo_green_dark"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/kegiatanpel"
+                    android:background="@drawable/green_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Kegiatan"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textColorHint="@color/hintijo"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/lembagapel"
+                    android:background="@drawable/green_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Lembaga"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textColorHint="@color/hintijo"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/periodepel"
+                    android:background="@drawable/green_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Periode"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textColorHint="@color/hintijo"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/skalapel"
+                    android:background="@drawable/green_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Skala"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textColorHint="@color/hintijo"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Save"
+                    android:id="@+id/btnsavepel"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/pb"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="@android:color/holo_green_dark"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>
