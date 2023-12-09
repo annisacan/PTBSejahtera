@@ -88,7 +88,7 @@ public class UploadActivityPeng extends AppCompatActivity {
         });
     }
     public void saveData(){
-        StorageReference storageReference= FirebaseStorage.getInstance().getReference().child("Gambar Pengalaman").child(uri.getLastPathSegment());
+        StorageReference storageReference= FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Pengalaman").child(uri.getLastPathSegment());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(UploadActivityPeng.this);
         builder.setCancelable(false);
@@ -121,7 +121,7 @@ public class UploadActivityPeng extends AppCompatActivity {
 
         DataClassPeng dataClass = new DataClassPeng(kegiatan,instansi,periode,posisi,imageurl);
 
-        FirebaseDatabase.getInstance().getReference("Deskripsi Sertifikat Pengalaman").child(kegiatan).setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+        FirebaseDatabase.getInstance().getReference("Deskripsi Pengalaman").child(kegiatan).setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()){

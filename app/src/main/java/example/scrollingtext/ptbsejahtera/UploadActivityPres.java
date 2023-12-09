@@ -89,7 +89,7 @@ public class UploadActivityPres extends AppCompatActivity {
         });
     }
     public void saveData(){
-        StorageReference storageReference= FirebaseStorage.getInstance().getReference().child("Gambar Prestasi").child(uri.getLastPathSegment());
+        StorageReference storageReference= FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Prestasi").child(uri.getLastPathSegment());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(UploadActivityPres.this);
         builder.setCancelable(false);
@@ -122,7 +122,7 @@ public class UploadActivityPres extends AppCompatActivity {
 
         DataClassPress dataClass = new DataClassPress(kegiatan,tgl,capaian,skala,imageurl);
 
-        FirebaseDatabase.getInstance().getReference("Deskripsi Sertifikat Prestasi").child(kegiatan).setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+        FirebaseDatabase.getInstance().getReference("Deskripsi Prestasi").child(kegiatan).setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
