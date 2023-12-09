@@ -15,12 +15,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Register_Activity extends AppCompatActivity {
 
     private FirebaseAuth auth;
-    private EditText signusername, signemail, signpass, signkonpass, signinst, signnohp;
-    private Button dafbtn, linbtn;
+    EditText signusername, signemail, signpass, signkonpass, signinst, signnohp;
+    Button dafbtn, linbtn;
+    FirebaseDatabase database;
+    DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,9 @@ public class Register_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         auth= FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        reference = database.getReference("User");
+
         signusername= findViewById(R.id.inputusernamereg);
         signemail= findViewById(R.id.inputemailreg);
         signpass= findViewById(R.id.inputpassreg);
@@ -61,6 +68,17 @@ public class Register_Activity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()){
+
+                                    String userId = auth.getCurrentUser().getUid();
+                                    DataUserClass user = new DataUserClass(
+                                            signusername.getText().toString().trim(),
+                                            signemail.getText().toString().trim(),
+                                            signinst.getText().toString().trim(),
+                                            signnohp.getText().toString().trim()
+                                    );
+
+                                    reference.child(userId).setValue(user);
+
                                     Toast.makeText(Register_Activity.this, "Akun Berhasil Terdaftar", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(Register_Activity.this, Login_Activity.class));
                                 }else {
