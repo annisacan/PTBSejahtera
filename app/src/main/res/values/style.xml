@@ -3,4 +3,17 @@
     <style name="TabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
         <item name="android:fontFamily">@font/peb</item>
     </style>
+
+    <style name="BottomNavigationViewTextStyleActive">
+        <item name="android:fontFamily">@font/pb</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:color">#FFBE5E</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyleInactive">
+        <item name="android:fontFamily">@font/pb</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:color">@color/white</item>
+    </style>
+
 </resources>
