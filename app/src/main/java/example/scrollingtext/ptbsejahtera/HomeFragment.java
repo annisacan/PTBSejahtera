@@ -76,16 +76,13 @@ public class HomeFragment extends Fragment {
             tabCV.setBackgroundResource(R.drawable.round_back_putihh);
             fragment = new CvFragment();
         }
-        Animation slideIn = AnimationUtils.loadAnimation(getContext(), R.anim.slide_in_from_right);
-        Animation slideOut = AnimationUtils.loadAnimation(getContext(), R.anim.slide_out_to_left);
-        Animation slideInReverse = AnimationUtils.loadAnimation(getContext(), R.anim.slide_in_from_left);
-        Animation slideOutReverse = AnimationUtils.loadAnimation(getContext(), R.anim.slide_out_to_right);
+        Animation slideDown = AnimationUtils.loadAnimation(getContext(), R.anim.slide_down);
+        Animation slideDownReverse = AnimationUtils.loadAnimation(getContext(), R.anim.slide_down_reverse);
 
-        replaceFragmentWithAnimation(fragment, slideIn, slideInReverse,slideOut , slideOutReverse);
+        replaceFragmentWithAnimation(fragment, slideDown, slideDownReverse);
     }
 
-    private void replaceFragmentWithAnimation(Fragment fragment, Animation slideIn, Animation slideOut,
-                                              Animation slideInReverse, Animation slideOutReverse) {
+    private void replaceFragmentWithAnimation(Fragment fragment, Animation slideIn, Animation slideOut) {
         FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
 
         // Set custom animations

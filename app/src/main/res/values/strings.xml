@@ -24,4 +24,9 @@
     <string name="foreset">Reset</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navbartekshome">Home</string>
+    <string name="navbartekskalender">Kalender</string>
+    <string name="navbartekssearch">Search</string>
+    <string name="tabtekssertifikat">Sertifikat</string>
+    <string name="tekstabcv">CV</string>
 </resources>

@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/frame_layout_main"
         android:layout_width="0dp"
@@ -52,10 +50,10 @@
 
             <TextView
                 android:id="@+id/homenavtxt"
-                android:paddingTop="7dp"
+                android:paddingTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home"
+                android:text="@string/navbartekshome"
                 android:fontFamily="@font/pb"
                 android:layout_marginStart="10dp"
                 android:textSize="20sp"/>
@@ -66,7 +64,7 @@
             android:id="@+id/navLayoutKalender"
             android:background="@android:color/transparent"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
@@ -83,10 +81,10 @@
             <TextView
                 android:id="@+id/kalendernavtxt"
                 android:visibility="gone"
-                android:paddingTop="7dp"
+                android:paddingTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kalender"
+                android:text="@string/navbartekskalender"
                 android:fontFamily="@font/pb"
                 android:layout_marginStart="10dp"
                 android:textSize="20sp"/>
@@ -97,7 +95,7 @@
             android:id="@+id/navLayoutSearch"
             android:background="@android:color/transparent"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
@@ -114,16 +112,15 @@
             <TextView
                 android:id="@+id/searchnavtxt"
                 android:visibility="gone"
-                android:paddingTop="7dp"
+                android:paddingTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search"
+                android:text="@string/navbartekssearch"
                 android:fontFamily="@font/pb"
                 android:layout_marginStart="10dp"
                 android:textSize="20sp"/>
 
         </LinearLayout>
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
