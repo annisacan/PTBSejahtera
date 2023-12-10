@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -55,6 +56,7 @@ public class Register_Activity extends AppCompatActivity {
                 signnohp.getText().toString().trim().isEmpty()){
                     Toast.makeText(Register_Activity.this, "Data tidak boleh kosong", Toast.LENGTH_SHORT).show();
                 }else {
+                    final String username = signusername.getText().toString().trim();
                     String email = signemail.getText().toString().trim();
                     String pass = signpass.getText().toString().trim();
                     String konpass = signkonpass.getText().toString().trim();
@@ -64,28 +66,40 @@ public class Register_Activity extends AppCompatActivity {
                     } else if (!pass.equals(konpass)) {
                         Toast.makeText(Register_Activity.this, "Konfirmasi Password tidak sesuai", Toast.LENGTH_SHORT).show();
                     } else {
-                        auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
+                        reference.child(username).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                             @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
+                            public void onComplete(@NonNull Task<DataSnapshot> task) {
                                 if (task.isSuccessful()){
+                                    if (task.getResult().exists()){
+                                        Toast.makeText(Register_Activity.this, "Username sudah terdaftar", Toast.LENGTH_SHORT).show();
+                                    }else {
+                                        auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                                if (task.isSuccessful()){
 
-                                    String userId = auth.getCurrentUser().getUid();
-                                    DataUserClass user = new DataUserClass(
-                                            signusername.getText().toString().trim(),
-                                            signemail.getText().toString().trim(),
-                                            signinst.getText().toString().trim(),
-                                            signnohp.getText().toString().trim()
-                                    );
+                                                    DataUserClass user = new DataUserClass(
+                                                            username,
+                                                            signemail.getText().toString().trim(),
+                                                            signinst.getText().toString().trim(),
+                                                            signnohp.getText().toString().trim()
+                                                    );
 
-                                    reference.child(userId).setValue(user);
+                                                    reference.child(username).setValue(user);
 
-                                    Toast.makeText(Register_Activity.this, "Akun Berhasil Terdaftar", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(Register_Activity.this, Login_Activity.class));
-                                }else {
-                                    Toast.makeText(Register_Activity.this, "Akun Gagal Terdaftar", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(Register_Activity.this, "Akun Berhasil Terdaftar", Toast.LENGTH_SHORT).show();
+                                                    startActivity(new Intent(Register_Activity.this, Login_Activity.class));
+                                                }else {
+                                                    Toast.makeText(Register_Activity.this, "Akun Gagal Terdaftar", Toast.LENGTH_SHORT).show();
+                                                }
+                                            }
+                                        });
+                                    }
                                 }
                             }
                         });
+
                     }
                 }
             }
