@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/rcimage_sertif"
+            android:src="@color/white"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rctipe_sertif"
+            android:text="Tipe Sertif"
+            android:textSize="16sp"
+            android:fontFamily="@font/pb"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimage_sertif"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rcJudul_sertif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcJudul_sertif"
+            android:text="Judul Sertif"
+            android:textSize="12sp"
+            android:fontFamily="@font/pr"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimage_sertif"
+            app:layout_constraintTop_toBottomOf="@id/rctipe_sertif"
+            app:layout_constraintBottom_toBottomOf="@id/rctanggal_sertif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rctanggal_sertif"
+            android:text="dd/mm/yyyy"
+            android:textSize="12sp"
+            android:fontFamily="@font/pr"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimage_sertif"
+            app:layout_constraintTop_toBottomOf="@id/rcJudul_sertif"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/buttondetailrc"
+            android:text="Detail"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/pb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/rctanggal_sertif"
+            android:backgroundTint="@color/ijobanget"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
