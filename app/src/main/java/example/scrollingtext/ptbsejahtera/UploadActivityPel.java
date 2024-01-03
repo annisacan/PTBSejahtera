@@ -139,9 +139,9 @@ public class UploadActivityPel extends AppCompatActivity {
         DatabaseReference userReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid);
         DatabaseReference dataReference = userReference.child("Deskripsi Pelatihan").child(kegiatan);
 
-        DataClassPel dataClass = new DataClassPel(kegiatan, lembaga, periode, skala, imageurl);
+        DataClassPel dataClassPel = new DataClassPel(kegiatan, lembaga, periode, skala, imageurl);
 
-        dataReference.setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+        dataReference.setValue(dataClassPel).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
