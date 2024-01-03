@@ -1,5 +1,6 @@
 package example.scrollingtext.ptbsejahtera;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -45,6 +47,7 @@ public class SertifFragment extends Fragment {
         return fragment;
     }
 
+    private FloatingActionButton tambahSertifButton;
     public SertifFragment() {
         // Required empty public constructor
     }
@@ -64,6 +67,22 @@ public class SertifFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_sertif, container, false);
 
+        // Inisialisasi Floating Action Button
+        tambahSertifButton = view.findViewById(R.id.tambahsertif);
+
+        // Menambahkan onClickListener pada Floating Action Button
+        tambahSertifButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Aksi yang ingin dilakukan saat Floating Action Button ditekan
+                navigateToTipeSertifikat();
+            }
+        });
+
         return view;
+    }
+    private void navigateToTipeSertifikat() {
+        Intent intent = new Intent(getActivity(), Tipe_Sertif.class);
+        startActivity(intent);
     }
 }

@@ -139,7 +139,7 @@ public class UploadActivityOrg extends AppCompatActivity {
         DatabaseReference userReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid);
         DatabaseReference dataReference = userReference.child("Deskripsi Organisasi").child(organisasi);
 
-        DataClassPress dataClass = new DataClassPress(organisasi, periode, jabatan, divisi, imageurl);
+        DataClassOrg dataClass = new DataClassOrg(organisasi, periode, jabatan, divisi, imageurl);
 
         dataReference.setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

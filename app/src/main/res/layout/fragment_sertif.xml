@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#E6E2E2"
     tools:context=".SertifFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
-
-    <ImageView
-        android:id="@+id/tomboltambahsertif"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/bgtomboltambah"
-        android:elevation="8dp"
-        android:padding="15dp"
-        android:src="@drawable/tambahvektor" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tambahsertif"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/tambahvektor"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:tint="@color/white"
+        app:borderWidth="3dp"
+        app:fabSize="normal"
+        app:elevation="8dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclersertif"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="top"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:layout_gravity="top"/>
+        android:elevation="4dp"/>
 
 </FrameLayout>

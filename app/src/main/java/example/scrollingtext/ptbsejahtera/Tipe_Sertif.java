@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class Tipe_Sertif extends AppCompatActivity {
 
-    private ImageView btnpres, btnpeng, btnorg, btnpel;
+    private ImageView btnpres, btnpeng, btnorg, btnpel, backya;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,15 @@ public class Tipe_Sertif extends AppCompatActivity {
         btnpeng = findViewById(R.id.btnpeng);
         btnorg = findViewById(R.id.btnorg);
         btnpel = findViewById(R.id.btnpel);
+        backya = findViewById(R.id.backIcon);
 
+        backya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Tipe_Sertif.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
         btnpres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
