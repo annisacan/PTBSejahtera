@@ -27,6 +27,8 @@ public class Detail_Sertif extends AppCompatActivity {
         if (bundle != null){
             detailOrg.setText(bundle.getString("Organisasi"));
             detailPer.setText(bundle.getString("Periode"));
+            detailJab.setText(bundle.getString("Jabatan"));
+            detailDiv.setText(bundle.getString("Divisi"));
             Glide.with(this).load(bundle.getString("Image")).into(detailImgOrg);
         }
     }
