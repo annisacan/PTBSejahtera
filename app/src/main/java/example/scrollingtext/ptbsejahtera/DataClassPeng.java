@@ -34,4 +34,7 @@ public class DataClassPeng {
         this.dataPosisi = dataPosisi;
         this.dataImage = dataImage;
     }
+    public DataClassPeng(){
+
+    }
 }

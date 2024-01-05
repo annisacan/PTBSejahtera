@@ -34,4 +34,7 @@ public class DataClassPress {
         this.dataSkala = dataSkala;
         this.dataImage = dataImage;
     }
+    public DataClassPress(){
+
+    }
 }

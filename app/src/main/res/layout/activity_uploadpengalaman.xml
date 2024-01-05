@@ -81,6 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sertifikat Pengalaman"
+                    android:id="@+id/titlePeng"
                     android:textSize="20sp"
                     android:textAlignment="center"
                     android:fontFamily="@font/pb"

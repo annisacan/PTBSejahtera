@@ -62,7 +62,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:id="@+id/upload3"
+                    android:id="@+id/viewdetail"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"/>
@@ -70,16 +70,16 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/titlesertif"
                     android:text=""
                     android:textSize="20sp"
                     android:textAlignment="center"
                     android:fontFamily="@font/pb"
                     android:textColor="@android:color/holo_green_dark"/>
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/org"
+                    android:id="@+id/data1"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
@@ -91,7 +91,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/periodorg"
+                    android:id="@+id/data2"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
@@ -103,7 +103,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/jabatanorg"
+                    android:id="@+id/data3"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
@@ -115,7 +115,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/divorg"
+                    android:id="@+id/data4"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"

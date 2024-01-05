@@ -9,6 +9,17 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclersertif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="4dp"/>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,16 +32,5 @@
         app:borderWidth="3dp"
         app:fabSize="normal"
         app:elevation="8dp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclersertif"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="12dp"
-        android:elevation="4dp"/>
 
 </FrameLayout>

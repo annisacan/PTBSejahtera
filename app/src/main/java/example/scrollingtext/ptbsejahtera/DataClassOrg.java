@@ -34,4 +34,8 @@ public class DataClassOrg {
         this.dataDivisi = dataDivisi;
         this.dataImage = dataImage;
     }
+
+    public DataClassOrg(){
+
+    }
 }

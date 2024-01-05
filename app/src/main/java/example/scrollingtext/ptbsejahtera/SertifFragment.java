@@ -1,16 +1,26 @@
 package example.scrollingtext.ptbsejahtera;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 
-import android.view.Gravity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -48,6 +58,10 @@ public class SertifFragment extends Fragment {
     }
 
     private FloatingActionButton tambahSertifButton;
+    RecyclerView recyclerView;
+    List<DataClassOrg>dataOrg;
+    DatabaseReference databaseReference;
+    ValueEventListener eventListener;
     public SertifFragment() {
         // Required empty public constructor
     }
@@ -64,21 +78,51 @@ public class SertifFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_sertif, container, false);
 
-        // Inisialisasi Floating Action Button
-        tambahSertifButton = view.findViewById(R.id.tambahsertif);
+        recyclerView = view.findViewById(R.id.recyclersertif);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(requireContext(),1);
+        recyclerView.setLayoutManager(gridLayoutManager);
 
-        // Menambahkan onClickListener pada Floating Action Button
-        tambahSertifButton.setOnClickListener(new View.OnClickListener() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        builder.setCancelable(false);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        dataOrg = new ArrayList<>();
+
+        AdapterSertif  adapter = new AdapterSertif(getContext(), dataOrg);
+        recyclerView.setAdapter(adapter);
+
+        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid).child("Sertifikat Organisasi");
+        dialog.show();
+
+        eventListener = databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                // Aksi yang ingin dilakukan saat Floating Action Button ditekan
-                navigateToTipeSertifikat();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                dataOrg.clear();
+                for (DataSnapshot itemSnapshot: snapshot.getChildren()){
+                    DataClassOrg dataClassOrg = itemSnapshot.getValue(DataClassOrg.class);
+                    dataOrg.add(dataClassOrg);
+                }
+                adapter.notifyDataSetChanged();
+                dialog.dismiss();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                dialog.dismiss();
             }
         });
 
+        tambahSertifButton = view.findViewById(R.id.tambahsertif);
+        tambahSertifButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToTipeSertifikat();
+            }
+        });
         return view;
     }
     private void navigateToTipeSertifikat() {

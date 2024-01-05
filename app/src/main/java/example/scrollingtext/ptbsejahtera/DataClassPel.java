@@ -34,4 +34,7 @@ public class DataClassPel {
         this.dataSkala = dataSkala;
         this.dataImage = dataImage;
     }
+    public DataClassPel(){
+
+    }
 }
