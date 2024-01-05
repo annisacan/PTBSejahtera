@@ -137,7 +137,7 @@ public class UploadActivityPres extends AppCompatActivity {
 
     public void uploadData(String kegiatan, String tgl, String capaian, String skala, String uid) {
         DatabaseReference userReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid);
-        DatabaseReference dataReference = userReference.child("Deskripsi Prestasi").child(kegiatan);
+        DatabaseReference dataReference = userReference.child("Sertifikat Prestasi").child(kegiatan);
 
         DataClassPress dataClassPress = new DataClassPress(kegiatan, tgl, capaian, skala, imageurl);
 

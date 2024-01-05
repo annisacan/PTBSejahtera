@@ -138,7 +138,7 @@ public class UploadActivityPeng extends AppCompatActivity {
 
     public void uploadData(String kegiatan, String instansi, String periode, String posisi, String uid) {
         DatabaseReference userReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid);
-        DatabaseReference dataReference = userReference.child("Deskripsi Pengalaman").child(kegiatan);
+        DatabaseReference dataReference = userReference.child("Sertifikat Pengalaman").child(kegiatan);
 
         DataClassPeng dataClassPeng = new DataClassPeng(kegiatan, instansi, periode, posisi, imageurl);
 
