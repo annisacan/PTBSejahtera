@@ -2,14 +2,16 @@ package example.scrollingtext.ptbsejahtera;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import example.scrollingtext.ptbsejahtera.databinding.ActivityDetailSertifBinding;
 
 public class Detail_Sertif extends AppCompatActivity {
-    ImageView detailImgOrg;
+    ImageView detailImgOrg, backDetail;
     TextView detailOrg, detailPer, detailJab, detailDiv;
 
     @Override
@@ -22,6 +24,7 @@ public class Detail_Sertif extends AppCompatActivity {
         detailPer = findViewById(R.id.data2);
         detailJab = findViewById(R.id.data3);
         detailDiv = findViewById(R.id.data4);
+        backDetail = findViewById(R.id.backDetail);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
@@ -31,5 +34,13 @@ public class Detail_Sertif extends AppCompatActivity {
             detailDiv.setText(bundle.getString("Divisi"));
             Glide.with(this).load(bundle.getString("Image")).into(detailImgOrg);
         }
+
+        backDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Detail_Sertif.this, Tipe_Sertif.class);
+                startActivity(intent);
+            }
+        });
     }
 }

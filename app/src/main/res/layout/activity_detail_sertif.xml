@@ -15,7 +15,7 @@
         android:background="@android:color/transparent">
 
         <ImageView
-            android:id="@+id/back3"
+            android:id="@+id/backDetail"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/backicon"
