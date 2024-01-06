@@ -58,10 +58,16 @@ public class SertifFragment extends Fragment {
     }
 
     private FloatingActionButton tambahSertifButton;
-    RecyclerView recyclerView;
+    RecyclerView recyclerViewPress;
+    RecyclerView recyclerViewPeng;
+    RecyclerView recyclerViewOrg;
+    RecyclerView recyclerViewPel;
     List<DataClassPress>dataPress;
-    DatabaseReference databaseReference;
-    ValueEventListener eventListener;
+    List<DataClassPeng>dataPeng;
+    List<DataClassOrg>dataOrg;
+    List<DataClassPel>dataPel;
+    DatabaseReference databaseReferencePress, databaseReferencePeng, databaseReferenceOrg, databaseReferencePel;
+    ValueEventListener eventListenerPress, eventListenerPeng, eventListenerOrg, eventListenerPel;
     public SertifFragment() {
         // Required empty public constructor
     }
@@ -80,25 +86,49 @@ public class SertifFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_sertif, container, false);
 
-        recyclerView = view.findViewById(R.id.recyclersertif);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(requireContext(),1);
-        recyclerView.setLayoutManager(gridLayoutManager);
+        recyclerViewPress = view.findViewById(R.id.recyclersertifPress);
+        recyclerViewPeng = view.findViewById(R.id.recyclersertifPeng);
+        recyclerViewOrg = view.findViewById(R.id.recyclersertifOrg);
+        recyclerViewPel = view.findViewById(R.id.recyclersertifPel);
+
+        GridLayoutManager gridLayoutManagerPress = new GridLayoutManager(requireContext(),1);
+        GridLayoutManager gridLayoutManagerPeng = new GridLayoutManager(requireContext(),1);
+        GridLayoutManager gridLayoutManagerOrg = new GridLayoutManager(requireContext(),1);
+        GridLayoutManager gridLayoutManagerPel = new GridLayoutManager(requireContext(),1);
+
+        recyclerViewPress.setLayoutManager(gridLayoutManagerPress);
+        recyclerViewPeng.setLayoutManager(gridLayoutManagerPeng);
+        recyclerViewOrg.setLayoutManager(gridLayoutManagerOrg);
+        recyclerViewPel.setLayoutManager(gridLayoutManagerPel);
+
+        dataPress = new ArrayList<>();
+        dataPeng = new ArrayList<>();
+        dataOrg = new ArrayList<>();
+        dataPel = new ArrayList<>();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
         builder.setCancelable(false);
         AlertDialog dialog = builder.create();
         dialog.show();
 
-        dataPress = new ArrayList<>();
+        AdapterSertifPress adapterPress = new AdapterSertifPress(getContext(), dataPress);
+        AdapterSertifPeng adapterPeng = new AdapterSertifPeng(getContext(), dataPeng);
+        AdapterSertifOrg adapterOrg = new AdapterSertifOrg(getContext(), dataOrg);
+        AdapterSertifPel adapterPel = new AdapterSertifPel(getContext(), dataPel);
 
-        AdapterSertifPress adapter = new AdapterSertifPress(getContext(), dataPress);
-        recyclerView.setAdapter(adapter);
+        recyclerViewPress.setAdapter(adapterPress);
+        recyclerViewPeng.setAdapter(adapterPeng);
+        recyclerViewOrg.setAdapter(adapterOrg);
+        recyclerViewPel.setAdapter(adapterPel);
 
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid).child("Sertifikat Prestasi");
-        dialog.show();
 
-        eventListener = databaseReference.addValueEventListener(new ValueEventListener() {
+        databaseReferencePress = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid).child("Sertifikat Prestasi");
+        databaseReferencePeng = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid).child("Sertifikat Pengalaman");
+        databaseReferenceOrg = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid).child("Sertifikat Organisasi");
+        databaseReferencePel = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid).child("Sertifikat Pelatihan");
+
+        eventListenerPress = databaseReferencePress.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 dataPress.clear();
@@ -106,7 +136,61 @@ public class SertifFragment extends Fragment {
                     DataClassPress dataClassPress = itemSnapshot.getValue(DataClassPress.class);
                     dataPress.add(dataClassPress);
                 }
-                adapter.notifyDataSetChanged();
+                adapterPress.notifyDataSetChanged();
+                dialog.dismiss();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                dialog.dismiss();
+            }
+        });
+
+        eventListenerPeng = databaseReferencePeng.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                dataPeng.clear();
+                for (DataSnapshot itemSnapshot: snapshot.getChildren()){
+                    DataClassPeng dataClassPeng = itemSnapshot.getValue(DataClassPeng.class);
+                    dataPeng.add(dataClassPeng);
+                }
+                adapterPeng.notifyDataSetChanged();
+                dialog.dismiss();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                dialog.dismiss();
+            }
+        });
+
+        eventListenerOrg = databaseReferenceOrg.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                dataOrg.clear();
+                for (DataSnapshot itemSnapshot: snapshot.getChildren()){
+                    DataClassOrg dataClassOrg = itemSnapshot.getValue(DataClassOrg.class);
+                    dataOrg.add(dataClassOrg);
+                }
+                adapterOrg.notifyDataSetChanged();
+                dialog.dismiss();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                dialog.dismiss();
+            }
+        });
+
+        eventListenerPel = databaseReferencePel.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                dataPel.clear();
+                for (DataSnapshot itemSnapshot: snapshot.getChildren()){
+                    DataClassPel dataClassPel = itemSnapshot.getValue(DataClassPel.class);
+                    dataPel.add(dataClassPel);
+                }
+                adapterPel.notifyDataSetChanged();
                 dialog.dismiss();
             }
 
@@ -123,6 +207,7 @@ public class SertifFragment extends Fragment {
                 navigateToTipeSertifikat();
             }
         });
+
         return view;
     }
     private void navigateToTipeSertifikat() {
