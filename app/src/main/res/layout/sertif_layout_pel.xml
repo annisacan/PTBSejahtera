@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:id="@+id/rcCardPel"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/rcimagePel"
+            android:src="@color/white"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rctipePel"
+            android:text="Sertifikat Pelatihan"
+            android:textSize="16sp"
+            android:fontFamily="@font/pb"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimagePel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rcJudulPel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcJudulPel"
+            android:text="Judul Sertif"
+            android:textSize="12sp"
+            android:fontFamily="@font/pr"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimagePel"
+            app:layout_constraintTop_toBottomOf="@id/rctipePel"
+            app:layout_constraintBottom_toBottomOf="@id/rctanggalPel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rctanggalPel"
+            android:text="dd/mm/yyyy"
+            android:textSize="12sp"
+            android:fontFamily="@font/pr"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimagePel"
+            app:layout_constraintTop_toBottomOf="@id/rcJudulPel"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/rclembagaPel"
+            android:layout_width="140dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/pr"
+            android:maxLines="0"
+            android:text="Jabatan"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rctanggalPel"
+            app:layout_constraintEnd_toEndOf="@+id/rctanggalPel" />
+
+        <TextView
+            android:id="@+id/rcskalaPel"
+            android:layout_width="140dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/pr"
+            android:maxLines="0"
+            android:text="Jabatan"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rctanggalPel"
+            app:layout_constraintEnd_toEndOf="@+id/rctanggalPel" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

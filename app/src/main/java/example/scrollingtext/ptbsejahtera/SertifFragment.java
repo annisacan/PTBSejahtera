@@ -91,7 +91,7 @@ public class SertifFragment extends Fragment {
 
         dataOrg = new ArrayList<>();
 
-        AdapterSertif  adapter = new AdapterSertif(getContext(), dataOrg);
+        AdapterSertifOrg  adapter = new AdapterSertifOrg(getContext(), dataOrg);
         recyclerView.setAdapter(adapter);
 
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();

@@ -8,16 +8,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
-import example.scrollingtext.ptbsejahtera.databinding.ActivityDetailSertifBinding;
 
-public class Detail_Sertif extends AppCompatActivity {
+public class Detail_SertifOrg extends AppCompatActivity {
     ImageView detailImgOrg, backDetail;
     TextView detailOrg, detailPer, detailJab, detailDiv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_sertif);
+        setContentView(R.layout.activity_detail_sertif_org);
 
         detailImgOrg = findViewById(R.id.viewdetail);
         detailOrg = findViewById(R.id.data1);
@@ -38,7 +37,7 @@ public class Detail_Sertif extends AppCompatActivity {
         backDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Detail_Sertif.this, Tipe_Sertif.class);
+                Intent intent = new Intent(Detail_SertifOrg.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -15,10 +15,13 @@
         android:theme="@style/Theme.PTBSejahtera"
         tools:targetApi="31">
         <activity
+            android:name=".Detail_Sertif_Pel"
+            android:exported="false" />
+        <activity
             android:name=".Search"
             android:exported="false" />
         <activity
-            android:name=".Detail_Sertif"
+            android:name=".Detail_SertifOrg"
             android:exported="false" />
         <activity
             android:name=".UploadActivityPel"

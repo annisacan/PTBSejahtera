@@ -16,12 +16,12 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-public class AdapterSertif extends RecyclerView.Adapter<SertifViewHolder> {
+public class AdapterSertifOrg extends RecyclerView.Adapter<SertifViewHolder> {
 
     private Context context;
     private List<DataClassOrg>dataOrg;
 
-    public AdapterSertif(Context context, List<DataClassOrg> dataOrg) {
+    public AdapterSertifOrg(Context context, List<DataClassOrg> dataOrg) {
         this.context = context;
         this.dataOrg = dataOrg;
     }
@@ -29,7 +29,7 @@ public class AdapterSertif extends RecyclerView.Adapter<SertifViewHolder> {
     @NonNull
     @Override
     public SertifViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.sertif_layout, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.sertif_layout_org, parent, false);
         return new SertifViewHolder(view);
     }
 
@@ -40,11 +40,10 @@ public class AdapterSertif extends RecyclerView.Adapter<SertifViewHolder> {
         holder.recper.setText(dataOrg.get(position).getDataPeriode());
         holder.recjab.setText(dataOrg.get(position).getDataJabatan());
         holder.recdiv.setText(dataOrg.get(position).getDataDivisi());
-
         holder.recCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, Detail_Sertif.class);
+                Intent intent = new Intent(context, Detail_SertifOrg.class);
                 intent.putExtra("Image", dataOrg.get(holder.getAdapterPosition()).getDataImage());
                 intent.putExtra("Organisasi", dataOrg.get(holder.getAdapterPosition()).getDataOrganisasi());
                 intent.putExtra("Periode", dataOrg.get(holder.getAdapterPosition()).getDataPeriode());
@@ -54,9 +53,7 @@ public class AdapterSertif extends RecyclerView.Adapter<SertifViewHolder> {
                 context.startActivity(intent);
             }
         });
-
     }
-
     @Override
     public int getItemCount() {
         return dataOrg.size();
