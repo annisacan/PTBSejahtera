@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:id="@+id/rcCardPeng"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/rcimagePeng"
+            android:src="@color/white"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rctipePeng"
+            android:text="Sertifikat Pengalaman"
+            android:textSize="16sp"
+            android:fontFamily="@font/pb"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimagePeng"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rcJudulPeng"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcJudulPeng"
+            android:text="Judul Sertif"
+            android:textSize="12sp"
+            android:fontFamily="@font/pr"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimagePeng"
+            app:layout_constraintTop_toBottomOf="@id/rctipePeng"
+            app:layout_constraintBottom_toBottomOf="@id/rctanggalPeng"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rctanggalPeng"
+            android:text="dd/mm/yyyy"
+            android:textSize="12sp"
+            android:fontFamily="@font/pr"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/rcimagePeng"
+            app:layout_constraintTop_toBottomOf="@id/rcJudulPeng"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/rcInstansiPeng"
+            android:layout_width="140dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/pr"
+            android:maxLines="0"
+            android:text="Instansi"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rctanggalPeng"
+            app:layout_constraintEnd_toEndOf="@+id/rctanggalPeng" />
+
+        <TextView
+            android:id="@+id/rcPosisiPeng"
+            android:layout_width="140dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/pr"
+            android:maxLines="0"
+            android:text="Posisi"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rctanggalPeng"
+            app:layout_constraintEnd_toEndOf="@+id/rctanggalPeng" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

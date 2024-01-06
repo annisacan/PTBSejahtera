@@ -59,7 +59,7 @@ public class SertifFragment extends Fragment {
 
     private FloatingActionButton tambahSertifButton;
     RecyclerView recyclerView;
-    List<DataClassOrg>dataOrg;
+    List<DataClassPress>dataPress;
     DatabaseReference databaseReference;
     ValueEventListener eventListener;
     public SertifFragment() {
@@ -89,22 +89,22 @@ public class SertifFragment extends Fragment {
         AlertDialog dialog = builder.create();
         dialog.show();
 
-        dataOrg = new ArrayList<>();
+        dataPress = new ArrayList<>();
 
-        AdapterSertifOrg  adapter = new AdapterSertifOrg(getContext(), dataOrg);
+        AdapterSertifPress adapter = new AdapterSertifPress(getContext(), dataPress);
         recyclerView.setAdapter(adapter);
 
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid).child("Sertifikat Organisasi");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid).child("Sertifikat Prestasi");
         dialog.show();
 
         eventListener = databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                dataOrg.clear();
+                dataPress.clear();
                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
-                    DataClassOrg dataClassOrg = itemSnapshot.getValue(DataClassOrg.class);
-                    dataOrg.add(dataClassOrg);
+                    DataClassPress dataClassPress = itemSnapshot.getValue(DataClassPress.class);
+                    dataPress.add(dataClassPress);
                 }
                 adapter.notifyDataSetChanged();
                 dialog.dismiss();
