@@ -43,7 +43,7 @@ public class AdapterSertifPel extends RecyclerView.Adapter<SertifPelViewHolder>{
         holder.recCardPel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, Detail_SertifOrg.class);
+                Intent intent = new Intent(context, Detail_Sertif_Pel.class);
                 intent.putExtra("ImagePel", dataPel.get(holder.getAdapterPosition()).getDataImage());
                 intent.putExtra("KegiatanPel", dataPel.get(holder.getAdapterPosition()).getDataKegiatan());
                 intent.putExtra("PeriodePel", dataPel.get(holder.getAdapterPosition()).getDataPeriode());
