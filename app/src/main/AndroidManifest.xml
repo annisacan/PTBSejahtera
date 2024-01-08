@@ -15,6 +15,18 @@
         android:theme="@style/Theme.PTBSejahtera"
         tools:targetApi="31">
         <activity
+            android:name=".Edit_Press"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Peng"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Pel"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Org"
+            android:exported="false" />
+        <activity
             android:name=".Detail_Kalender"
             android:exported="false" />
         <activity
