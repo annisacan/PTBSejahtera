@@ -3,13 +3,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CvFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment CV"
-        android:textSize="60sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewlogin"
+        android:layout_width="340dp"
+        android:layout_height="510dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/green_border"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/pb"
+            android:text="Lengkapi Data CV"
+            android:textColor="@color/ijobanget"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/namacv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_border"
+            android:drawableStart="@drawable/iconusername"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:fontFamily="@font/pm"
+            android:textSize="15sp"
+            android:hint="Nama lengkap anda"
+            android:textColorHint="@color/hintijo"/>
+
+
+        <EditText
+            android:id="@+id/pendidikancv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_border"
+            android:drawableStart="@drawable/iconinstitusi"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/pm"
+            android:hint="Pendidikan terakhir anda"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColorHint="@color/hintijo"/>
+
+        <EditText
+            android:id="@+id/nomorcv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_border"
+            android:drawableStart="@drawable/iconhp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/pm"
+            android:hint="Nomor yang bisa dihubungi"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColorHint="@color/hintijo"/>
+        <EditText
+            android:id="@+id/emailcv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_border"
+            android:drawableStart="@drawable/iconemail"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/pm"
+            android:hint="Alamat email anda"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColorHint="@color/hintijo"/>
+
+        <Button
+            android:id="@+id/btnGeneratePdf"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ijobanget"
+            android:fontFamily="@font/pb"
+            android:text="Generate CV"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>
