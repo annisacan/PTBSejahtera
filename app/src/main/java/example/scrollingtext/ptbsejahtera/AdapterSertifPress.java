@@ -49,6 +49,7 @@ public class AdapterSertifPress extends RecyclerView.Adapter <SertifPressViewHol
                 intent.putExtra("TanggalPress", dataPress.get(holder.getAdapterPosition()).getDataTanggal());
                 intent.putExtra("CapaianPress", dataPress.get(holder.getAdapterPosition()).getDataCapaian());
                 intent.putExtra("SkalaPress", dataPress.get(holder.getAdapterPosition()).getDataSkala());
+                intent.putExtra("Key", dataPress.get(holder.getAdapterPosition()).getKey());
 
                 context.startActivity(intent);
             }

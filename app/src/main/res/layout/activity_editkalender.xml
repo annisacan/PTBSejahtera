@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/paternbook"
-    tools:context=".UploadActivityPel">
+    tools:context=".UploadActivityOrg">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -15,7 +15,7 @@
         android:background="@android:color/transparent">
 
         <ImageView
-            android:id="@+id/backDetailPress"
+            android:id="@+id/backkalender"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/backicon"
@@ -26,7 +26,7 @@
             android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Detail Sertifikat"
+            android:text="Edit Kalender"
             android:textSize="30sp"
             android:fontFamily="@font/pb"
             android:textColor="@android:color/holo_green_dark"
@@ -59,39 +59,11 @@
                 android:padding="20dp"
                 android:background="@drawable/green_border">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:id="@+id/viewdetailPress"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
-                    android:scaleType="fitCenter"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/titlesertifPress"
-                    android:text="Sertifikat Prestasi"
-                    android:textSize="20sp"
-                    android:textAlignment="center"
-                    android:fontFamily="@font/pb"
-                    android:textColor="@android:color/holo_green_dark"/>
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/data1Press"
-                    android:background="@drawable/green_border"
-                    android:layout_marginTop="20dp"
-                    android:padding="16dp"
-                    android:hint="Kegiatan"
-                    android:gravity="start|center_vertical"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textColorHint="@color/hintijo"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:id="@+id/data2Press"
+                    android:id="@+id/tanggalkalender"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
@@ -100,62 +72,41 @@
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/data3Press"
+                    android:id="@+id/lokasikalender"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Capaian"
+                    android:hint="Lokasi"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/data4Press"
+                    android:id="@+id/agendakalender"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Skala"
+                    android:hint="Agenda"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
-                <LinearLayout
-                    android:id="@+id/buttonLayout"
+
+                <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center">
-
-                    <Button
-                        android:id="@+id/editPress"
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:text="Edit"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/pb"
-                        android:layout_marginEnd="8dp"
-                        app:cornerRadius="20dp"
-                        android:backgroundTint="@android:color/holo_green_dark"/>
-
-                    <Button
-                        android:id="@+id/deletePress"
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:text="Delete"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/pb"
-                        app:cornerRadius="20dp"
-                        android:backgroundTint="@android:color/holo_green_dark"/>
-                </LinearLayout>
+                    android:layout_height="60dp"
+                    android:text="Save"
+                    android:id="@+id/btnsaveeditkalender"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/pb"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="@android:color/holo_green_dark"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </ScrollView>

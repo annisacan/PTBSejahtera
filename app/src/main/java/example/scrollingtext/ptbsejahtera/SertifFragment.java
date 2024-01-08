@@ -98,6 +98,7 @@ public class SertifFragment extends Fragment {
                 dataPress.clear();
                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
                     DataClassPress dataClassPress = itemSnapshot.getValue(DataClassPress.class);
+                    dataClassPress.setKey(itemSnapshot.getKey());
                     dataPress.add(dataClassPress);
                 }
                 adapterPress.notifyDataSetChanged();
@@ -116,6 +117,7 @@ public class SertifFragment extends Fragment {
                 dataPeng.clear();
                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
                     DataClassPeng dataClassPeng = itemSnapshot.getValue(DataClassPeng.class);
+                    dataClassPeng.setKey(itemSnapshot.getKey());
                     dataPeng.add(dataClassPeng);
                 }
                 adapterPeng.notifyDataSetChanged();
@@ -134,6 +136,7 @@ public class SertifFragment extends Fragment {
                 dataOrg.clear();
                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
                     DataClassOrg dataClassOrg = itemSnapshot.getValue(DataClassOrg.class);
+                    dataClassOrg.setKey(itemSnapshot.getKey());
                     dataOrg.add(dataClassOrg);
                 }
                 adapterOrg.notifyDataSetChanged();
@@ -152,6 +155,7 @@ public class SertifFragment extends Fragment {
                 dataPel.clear();
                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
                     DataClassPel dataClassPel = itemSnapshot.getValue(DataClassPel.class);
+                    dataClassPel.setKey(itemSnapshot.getKey());
                     dataPel.add(dataClassPel);
                 }
                 adapterPel.notifyDataSetChanged();

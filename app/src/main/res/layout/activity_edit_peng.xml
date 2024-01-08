@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/paternbook"
-    tools:context=".UploadActivityPel">
+    tools:context=".Edit_Peng">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -15,7 +15,7 @@
         android:background="@android:color/transparent">
 
         <ImageView
-            android:id="@+id/backDetailPress"
+            android:id="@+id/editBackPeng"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/backicon"
@@ -26,7 +26,7 @@
             android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Detail Sertifikat"
+            android:text="Sertifikat Pengalaman"
             android:textSize="30sp"
             android:fontFamily="@font/pb"
             android:textColor="@android:color/holo_green_dark"
@@ -59,10 +59,20 @@
                 android:padding="20dp"
                 android:background="@drawable/green_border">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Gambar disini"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/pr"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"/>
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:id="@+id/viewdetailPress"
+                    android:src="@drawable/upload"
+                    android:id="@+id/editImgPeng"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"/>
@@ -70,16 +80,17 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/titlesertifPress"
-                    android:text="Sertifikat Prestasi"
+                    android:text="Sertifikat Pengalaman"
+                    android:id="@+id/titlePeng"
                     android:textSize="20sp"
                     android:textAlignment="center"
                     android:fontFamily="@font/pb"
                     android:textColor="@android:color/holo_green_dark"/>
-                <TextView
+
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/data1Press"
+                    android:id="@+id/editKegiatanPeng"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
@@ -88,74 +99,53 @@
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/data2Press"
+                    android:id="@+id/editInstansiPeng"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Tanggal"
+                    android:hint="Instansi"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/data3Press"
+                    android:id="@+id/editPeriodePeng"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Capaian"
+                    android:hint="periode"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
 
-                <TextView
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:id="@+id/data4Press"
+                    android:id="@+id/editPosisiPeng"
                     android:background="@drawable/green_border"
                     android:layout_marginTop="20dp"
                     android:padding="16dp"
-                    android:hint="Skala"
+                    android:hint="Posisi"
                     android:gravity="start|center_vertical"
                     android:textColor="@android:color/holo_green_dark"
                     android:textColorHint="@color/hintijo"/>
-                <LinearLayout
-                    android:id="@+id/buttonLayout"
+
+                <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center">
-
-                    <Button
-                        android:id="@+id/editPress"
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:text="Edit"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/pb"
-                        android:layout_marginEnd="8dp"
-                        app:cornerRadius="20dp"
-                        android:backgroundTint="@android:color/holo_green_dark"/>
-
-                    <Button
-                        android:id="@+id/deletePress"
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:text="Delete"
-                        android:textSize="15sp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/pb"
-                        app:cornerRadius="20dp"
-                        android:backgroundTint="@android:color/holo_green_dark"/>
-                </LinearLayout>
+                    android:layout_height="60dp"
+                    android:text="Save"
+                    android:id="@+id/editBtnSavePeng"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/pb"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="@android:color/holo_green_dark"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </ScrollView>

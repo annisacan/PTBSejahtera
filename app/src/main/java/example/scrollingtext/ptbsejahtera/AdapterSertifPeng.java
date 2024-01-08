@@ -49,6 +49,7 @@ public class AdapterSertifPeng extends RecyclerView.Adapter<SertifPengViewHolder
                 intent.putExtra("PeriodePeng", dataPeng.get(holder.getAdapterPosition()).getDataPeriode());
                 intent.putExtra("InstansiPeng", dataPeng.get(holder.getAdapterPosition()).getDataInstansi());
                 intent.putExtra("PosisiPeng", dataPeng.get(holder.getAdapterPosition()).getDataPosisi());
+                intent.putExtra("Key", dataPeng.get(holder.getAdapterPosition()).getKey());
 
                 context.startActivity(intent);
             }
