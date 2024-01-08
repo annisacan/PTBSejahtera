@@ -49,6 +49,7 @@ public class AdapterSertifPel extends RecyclerView.Adapter<SertifPelViewHolder>{
                 intent.putExtra("PeriodePel", dataPel.get(holder.getAdapterPosition()).getDataPeriode());
                 intent.putExtra("LembagaPel", dataPel.get(holder.getAdapterPosition()).getDataLembaga());
                 intent.putExtra("SkalaPel", dataPel.get(holder.getAdapterPosition()).getDataSkala());
+                intent.putExtra("Key", dataPel.get(holder.getAdapterPosition()).getKey());
 
                 context.startActivity(intent);
             }

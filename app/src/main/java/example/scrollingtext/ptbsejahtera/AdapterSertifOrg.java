@@ -49,6 +49,7 @@ public class AdapterSertifOrg extends RecyclerView.Adapter<SertifViewHolder> {
                 intent.putExtra("Periode", dataOrg.get(holder.getAdapterPosition()).getDataPeriode());
                 intent.putExtra("Jabatan", dataOrg.get(holder.getAdapterPosition()).getDataJabatan());
                 intent.putExtra("Divisi", dataOrg.get(holder.getAdapterPosition()).getDataDivisi());
+                intent.putExtra("Key", dataOrg.get(holder.getAdapterPosition()).getKey());
 
                 context.startActivity(intent);
             }

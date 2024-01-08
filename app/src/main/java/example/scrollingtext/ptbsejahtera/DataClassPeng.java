@@ -6,6 +6,15 @@ public class DataClassPeng {
     private String dataPeriode;
     private String dataPosisi;
     private String dataImage;
+    private String key;
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public String getDataKegiatan() {
         return dataKegiatan;
