@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paternbook"
+    tools:context=".UploadActivityOrg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/backkalender"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/backicon"
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalender"
+            android:textSize="30sp"
+            android:fontFamily="@font/pb"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:background="@drawable/green_border">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/tanggalkalender"
+                    android:background="@drawable/green_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Tanggal"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textColorHint="@color/hintijo"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/lokasikalender"
+                    android:background="@drawable/green_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Lokasi"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textColorHint="@color/hintijo"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/agendakalender"
+                    android:background="@drawable/green_border"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:hint="Agenda"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textColorHint="@color/hintijo"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Save"
+                    android:id="@+id/btnsavekalender"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/pb"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="@android:color/holo_green_dark"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

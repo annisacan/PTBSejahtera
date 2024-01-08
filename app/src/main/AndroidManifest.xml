@@ -15,6 +15,9 @@
         android:theme="@style/Theme.PTBSejahtera"
         tools:targetApi="31">
         <activity
+            android:name=".Detail_Kalender"
+            android:exported="false" />
+        <activity
             android:name=".Detail_Sertif_Press"
             android:exported="false" />
         <activity
@@ -23,6 +26,9 @@
         <activity
             android:name=".Detail_Sertif_Pel"
             android:exported="false" />
+        <activity
+            android:name=".Kalender"
+            android:exported="true" />
         <activity
             android:name=".Search"
             android:exported="false" />
