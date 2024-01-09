@@ -48,6 +48,7 @@ public class AdapterKalender extends RecyclerView.Adapter<KalenderViewHolder> {
                 intent.putExtra("Tanggal", dataKal.get(holder.getAdapterPosition()).getDataTanggalKalender());
                 intent.putExtra("Lokasi", dataKal.get(holder.getAdapterPosition()).getDataLokasiKalender());
                 intent.putExtra("Agenda", dataKal.get(holder.getAdapterPosition()).getDataAgendaKalender());
+                intent.putExtra("Key", dataKal.get(holder.getAdapterPosition()).getKey());
                 context.startActivity(intent);
             }
         });

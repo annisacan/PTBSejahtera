@@ -4,7 +4,15 @@ public class DataClassKalender {
     private String dataTanggalKalender;
     private String dataLokasiKalender;
     private String dataAgendaKalender;
+    private String key;
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public String getDataTanggalKalender() {
         return dataTanggalKalender;

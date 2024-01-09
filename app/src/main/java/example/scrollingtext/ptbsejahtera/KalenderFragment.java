@@ -76,6 +76,7 @@ public class KalenderFragment extends Fragment {
                 dataKal.clear();
                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
                     DataClassKalender dataClassKalender = itemSnapshot.getValue(DataClassKalender.class);
+                    dataClassKalender.setKey(itemSnapshot.getKey());
                     dataKal.add(dataClassKalender);
                 }
                 adapterKalender.notifyDataSetChanged();
