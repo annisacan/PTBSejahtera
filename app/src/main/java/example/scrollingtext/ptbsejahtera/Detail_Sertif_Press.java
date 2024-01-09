@@ -21,7 +21,7 @@ import com.google.firebase.storage.StorageReference;
 public class Detail_Sertif_Press extends AppCompatActivity {
     ImageView detailImgPress, backDetailPress;
     TextView detailkegPress, detailtglPress, detailCapPress, detailSkalPress;
-    Button detailDelete;
+    Button detailDelete, detailEdit;
     String key = "";
     String imgurl = "";
 
@@ -37,6 +37,7 @@ public class Detail_Sertif_Press extends AppCompatActivity {
         detailSkalPress = findViewById(R.id.data4Press);
         backDetailPress = findViewById(R.id.backDetailPress);
         detailDelete = findViewById(R.id.deletePress);
+        detailEdit = findViewById(R.id.editPress);
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Bundle bundle = getIntent().getExtras();
@@ -74,6 +75,20 @@ public class Detail_Sertif_Press extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Detail_Sertif_Press.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        detailEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Detail_Sertif_Press.this, Edit_Press.class)
+                        .putExtra("KegiatanPress", detailkegPress.getText().toString())
+                        .putExtra("TanggalPress", detailtglPress.getText().toString())
+                        .putExtra("CapaianPress", detailCapPress.getText().toString())
+                        .putExtra("SkalaPress", detailSkalPress.getText().toString())
+                        .putExtra("ImagePress", imgurl)
+                        .putExtra("Key", key);
                 startActivity(intent);
             }
         });

@@ -21,7 +21,7 @@ import com.google.firebase.storage.StorageReference;
 public class Detail_Sertif_Pel extends AppCompatActivity {
     ImageView detailImgPel, backDetailPel;
     TextView detailkegPel, detailLemPel, detailPerPel, detailSkalPel;
-    Button detailDelete;
+    Button detailDelete, detailEdit;
     String key = "";
     String imgurl = "";
 
@@ -37,6 +37,7 @@ public class Detail_Sertif_Pel extends AppCompatActivity {
         detailSkalPel = findViewById(R.id.data4Pel);
         backDetailPel = findViewById(R.id.backDetailPel);
         detailDelete = findViewById(R.id.deletePel);
+        detailEdit = findViewById(R.id.editPel);
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Bundle bundle = getIntent().getExtras();
@@ -72,6 +73,20 @@ public class Detail_Sertif_Pel extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Detail_Sertif_Pel.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        detailEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Detail_Sertif_Pel.this, Edit_Pel.class)
+                        .putExtra("KegiatanPel", detailkegPel.getText().toString())
+                        .putExtra("LembagaPel", detailLemPel.getText().toString())
+                        .putExtra("PeriodePel", detailPerPel.getText().toString())
+                        .putExtra("SkalaPel", detailSkalPel.getText().toString())
+                        .putExtra("ImagePel", imgurl)
+                        .putExtra("Key", key);
                 startActivity(intent);
             }
         });

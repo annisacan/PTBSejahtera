@@ -21,7 +21,7 @@ import com.google.firebase.storage.StorageReference;
 public class Detail_Sertif_Peng extends AppCompatActivity {
     ImageView detailImgPeng, backDetailPeng;
     TextView detailkegPeng, detailInsPeng, detailPerPeng, detailPosisiPeng;
-    Button detailDelete;
+    Button detailDelete, detailEdit;
     String key = "";
     String imgurl = "";
 
@@ -37,6 +37,7 @@ public class Detail_Sertif_Peng extends AppCompatActivity {
         detailPosisiPeng = findViewById(R.id.data4Peng);
         backDetailPeng = findViewById(R.id.backDetailPeng);
         detailDelete = findViewById(R.id.deletePeng);
+        detailEdit = findViewById(R.id.editPeng);
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Bundle bundle = getIntent().getExtras();
@@ -74,6 +75,19 @@ public class Detail_Sertif_Peng extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Detail_Sertif_Peng.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        detailEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Detail_Sertif_Peng.this, Edit_Peng.class)
+                        .putExtra("KegiatanPeng", detailkegPeng.getText().toString())
+                        .putExtra("InstansiPeng", detailInsPeng.getText().toString())
+                        .putExtra("PeriodePeng", detailPerPeng.getText().toString())
+                        .putExtra("PosisiPeng", detailPosisiPeng.getText().toString())
+                        .putExtra("ImagePeng", imgurl)
+                        .putExtra("Key", key);
                 startActivity(intent);
             }
         });

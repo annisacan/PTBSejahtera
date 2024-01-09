@@ -41,13 +41,11 @@ public class AdapterKalender extends RecyclerView.Adapter<KalenderViewHolder> {
         holder.reccardAgenda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Tambahkan logika untuk menangani klik pada tombol detail kalender di sini
-                // Anda bisa memulai aktivitas baru atau menampilkan detail kalender di sini
-                // Misalnya:
                 Intent intent = new Intent(context, Detail_Kalender.class);
                 intent.putExtra("Tanggal", dataKal.get(holder.getAdapterPosition()).getDataTanggalKalender());
                 intent.putExtra("Lokasi", dataKal.get(holder.getAdapterPosition()).getDataLokasiKalender());
                 intent.putExtra("Agenda", dataKal.get(holder.getAdapterPosition()).getDataAgendaKalender());
+                intent.putExtra("Key", dataKal.get(holder.getAdapterPosition()).getKey());
                 context.startActivity(intent);
             }
         });

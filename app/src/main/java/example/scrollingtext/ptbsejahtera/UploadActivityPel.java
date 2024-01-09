@@ -29,6 +29,11 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 public class UploadActivityPel extends AppCompatActivity {
 
     ImageView upimage, back;
@@ -106,7 +111,7 @@ public class UploadActivityPel extends AppCompatActivity {
         String skala = inskala.getText().toString();
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Prestasi").child(uid).child(uri.getLastPathSegment());
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Pelatihan").child(uid).child(uri.getLastPathSegment());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
@@ -136,8 +141,11 @@ public class UploadActivityPel extends AppCompatActivity {
     }
 
     public void uploadData(String kegiatan, String lembaga, String periode, String skala, String uid) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        String currentDate = dateFormat.format(Calendar.getInstance().getTime());
+
         DatabaseReference userReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid);
-        DatabaseReference dataReference = userReference.child("Sertifikat Pelatihan").child(kegiatan);
+        DatabaseReference dataReference = userReference.child("Sertifikat Pelatihan").child(currentDate);
 
         DataClassPel dataClassPel = new DataClassPel(kegiatan, lembaga, periode, skala, imageurl);
 
