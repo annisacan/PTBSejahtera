@@ -93,7 +93,7 @@ public class Edit_Org extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveData();
-                Intent intent = new Intent(Edit_Org.this, Detail_SertifOrg.class);
+                Intent intent = new Intent(Edit_Org.this, MainActivity.class);
                 startActivity(intent);
             }
         });
