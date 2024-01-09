@@ -52,7 +52,6 @@ public class CvFragment extends Fragment {
 
 
     final static int REQUEST_CODE = 1232;
-    Button btnGeneratePDF;
     List<DataClassPress>dataPress;
     List<DataClassPeng>dataPeng;
     List<DataClassOrg>dataOrg;
@@ -197,34 +196,43 @@ public class CvFragment extends Fragment {
         Paint myPaint = new Paint();
         Typeface poppinreg = ResourcesCompat.getFont(requireContext(), R.font.pr);
 
-        myPaint.setTextSize(10f);
+        myPaint.setTextSize(8f);
+        myPaint.setTypeface(poppinreg);
         canvas.drawText( "> " + dataorg.getDataPeriode(), 9, 254, myPaint);
         canvas.drawText( dataorg.getDataJabatan() + dataorg.getDataOrganisasi(), 17, 277, myPaint);
     }
 
+
+
     private void drawDataToPdfPel(Canvas canvas, DataClassPel datapel) {
         Paint myPaint = new Paint();
-
-        myPaint.setTextSize(10f);
-        canvas.drawText( "> " + datapel.getDataPeriode(), 205, 164, myPaint);
-        canvas.drawText( datapel.getDataKegiatan() + datapel.getDataLembaga(), 213, 187, myPaint);
+        Typeface poppinreg = ResourcesCompat.getFont(requireContext(), R.font.pr);
+        myPaint.setTypeface(poppinreg);
+        myPaint.setTextSize(8f);
+        canvas.drawText( "> " + datapel.getDataPeriode(), 205, 204, myPaint);
+        canvas.drawText( datapel.getDataKegiatan() + datapel.getDataLembaga(), 213, 227, myPaint);
     }
 
     private void drawDataToPdfPeng(Canvas canvas, DataClassPeng datapeng) {
         Paint myPaint = new Paint();
         Typeface poppinbold = ResourcesCompat.getFont(requireContext(), R.font.pb);
-
+        Typeface poppinreg = ResourcesCompat.getFont(requireContext(), R.font.pr);
         myPaint.setTextSize(10f);
-        canvas.drawText( "> " + datapeng.getDataPeriode(), 421, 170, myPaint);
-        canvas.drawText( datapeng.getDataKegiatan() + datapeng.getDataInstansi(), 428, 193, myPaint);
+        myPaint.setTypeface(poppinbold);
+        canvas.drawText("Pengalaman", 470, 280, myPaint);
+        myPaint.setTextSize(8f);
+        myPaint.setTypeface(poppinreg);
+        canvas.drawText( "> " + datapeng.getDataPeriode(), 421, 304, myPaint);
+        canvas.drawText( datapeng.getDataKegiatan() + datapeng.getDataInstansi(), 428, 327, myPaint);
     }
 
     private void drawDataToPdfPress(Canvas canvas, DataClassPress datapres) {
         Paint myPaint = new Paint();
-
-        myPaint.setTextSize(10f);
-        canvas.drawText( "> " + datapres.getDataTanggal(), 421, 124, myPaint);
-        canvas.drawText( datapres.getDataCapaian() + datapres.getDataKegiatan(), 428, 147, myPaint);
+        Typeface poppinreg = ResourcesCompat.getFont(requireContext(), R.font.pr);
+        myPaint.setTypeface(poppinreg);
+        myPaint.setTextSize(8f);
+        canvas.drawText( "> " + datapres.getDataTanggal(), 421, 154, myPaint);
+        canvas.drawText( datapres.getDataCapaian() + datapres.getDataKegiatan(), 428, 177, myPaint);
     }
 
 
@@ -319,12 +327,10 @@ public class CvFragment extends Fragment {
                 myPaint.setTypeface(poppinreg);
                 canvas.translate(0, 45);
             }
-            myPaint.setTextSize(10f);
-            myPaint.setTypeface(poppinbold);
-            canvas.drawText("Pengalaman", 470, 140, myPaint);
 
             for (DataClassPeng data : dataPeng) {
                 // Gambar data jenis Peng ke Canvas PDF
+
                 drawDataToPdfPeng(canvas, data);
                 myPaint.setTypeface(poppinreg);
                 canvas.translate(0, 45); // Sesuaikan posisi setiap item

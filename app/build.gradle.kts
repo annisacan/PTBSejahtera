@@ -51,4 +51,7 @@ dependencies {
     implementation ("com.github.clans:fab:1.6.4")
 
     implementation("androidx.core:core:1.6.0")
+
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
 }

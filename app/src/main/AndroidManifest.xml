@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PTBSejahtera"
         tools:targetApi="31">
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
         <activity
             android:name=".Edit_Press"
             android:exported="false" />
@@ -81,6 +86,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAG7qhabQw2_S2Ojzyb5hdWLsmpMzS8Nxc" />
     </application>
 
 </manifest>
