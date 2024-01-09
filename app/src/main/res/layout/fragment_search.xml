@@ -4,20 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/paternbook"
-    tools:context=".SearchFragment">
+    tools:context=".SearchFragment"
+    android:layout_gravity="center">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        android:id="@+id/ShowMap"
-        android:layout_width="180dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/ijobanget"
-        android:fontFamily="@font/pb"
-        android:text="Lihat Map"
-        android:textColor="@color/white"
-        android:layout_gravity="center"
-        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical"
+        android:padding="20dp">
 
+        <Button
+            android:id="@+id/ShowMap"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ijobanget"
+            android:fontFamily="@font/pb"
+            android:text="Lihat Map"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/notification"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/ShowMap"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/ijobanget"
+            android:fontFamily="@font/pb"
+            android:text="Notifikasi"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
 </FrameLayout>
