@@ -29,6 +29,11 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 public class UploadActivityOrg extends AppCompatActivity {
 
     ImageView upimage, back;
@@ -136,8 +141,12 @@ public class UploadActivityOrg extends AppCompatActivity {
     }
 
     public void uploadData(String organisasi, String periode, String jabatan, String divisi, String uid) {
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        String currentDate = dateFormat.format(Calendar.getInstance().getTime());
+
         DatabaseReference userReference = FirebaseDatabase.getInstance().getReference("Data Sertifikat User").child(uid);
-        DatabaseReference dataReference = userReference.child("Sertifikat Organisasi").child(organisasi);
+        DatabaseReference dataReference = userReference.child("Sertifikat Organisasi").child(currentDate);
 
         DataClassOrg dataClassOrg = new DataClassOrg(organisasi, periode, jabatan, divisi, imageurl);
 
