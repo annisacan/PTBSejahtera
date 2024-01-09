@@ -106,7 +106,7 @@ public class UploadActivityOrg extends AppCompatActivity {
         String divisi = indiv.getText().toString();
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Pengalaman").child(uid).child(uri.getLastPathSegment());
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Organisasi").child(uid).child(uri.getLastPathSegment());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);

@@ -106,7 +106,7 @@ public class UploadActivityPel extends AppCompatActivity {
         String skala = inskala.getText().toString();
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Prestasi").child(uid).child(uri.getLastPathSegment());
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Gambar Sertifikat Pelatihan").child(uid).child(uri.getLastPathSegment());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);

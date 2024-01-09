@@ -22,7 +22,7 @@ import com.google.firebase.storage.StorageReference;
 public class Detail_SertifOrg extends AppCompatActivity {
     ImageView detailImgOrg, backDetail;
     TextView detailOrg, detailPer, detailJab, detailDiv;
-    Button detailDelete;
+    Button detailDelete, detailEdit;
     String key = "";
     String imgurl = "";
 
@@ -38,6 +38,7 @@ public class Detail_SertifOrg extends AppCompatActivity {
         detailDiv = findViewById(R.id.data4);
         backDetail = findViewById(R.id.backDetail);
         detailDelete = findViewById(R.id.deleteOrg);
+        detailEdit = findViewById(R.id.editOrg);
         String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Bundle bundle = getIntent().getExtras();
@@ -74,6 +75,20 @@ public class Detail_SertifOrg extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Detail_SertifOrg.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        detailEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Detail_SertifOrg.this, Edit_Org.class)
+                        .putExtra("Organisasi", detailOrg.getText().toString())
+                        .putExtra("Periode", detailPer.getText().toString())
+                        .putExtra("Jabatan", detailJab.getText().toString())
+                        .putExtra("Divisi", detailDiv.getText().toString())
+                        .putExtra("Image", imgurl)
+                        .putExtra("Key", key);
                 startActivity(intent);
             }
         });
